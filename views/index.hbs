@@ -8,16 +8,20 @@
     <link rel="icon" href="/img/CorpTech-logo.png">
 </head>
 <body>
+  {{!-- A handlebars placeholder that dynamically inserts the title value that's passed from the server --}}
     <h1>{{title}}</h1>
+  {{!-- A handlebars placeholder that dynamically inserts a message that's then passed from the server --}}
     <p>{{message}}</p>
 
     <input type="text" id="movieInput" placeholder="Please Enter a Movie!" />
+    {{!-- The onclick fetch similar movies attaches a js function to the buttons onclick event. After the buttons clicked the function is called to fetch similar movies --}}
     <button onclick="fetchSimilarMovies()">Search</button>
 
     <h2>Similar Movies:</h2>
     <ul id="results"></ul>
 
-    {{> footer}} <!-- Include the footer partial -->
+{{!-- A handlebars component named footer. It's a resuable footer component found in the partials folder inside of the views folder --}}
+    {{> footer}} 
 
     <script src="/script.js"></script>
 </body>
