@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/img/CorpTech-logo.png">
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <p>{{message}}</p>
+
+    <input type="text" id="movieInput" placeholder="Please Enter a Movie!" />
+    <button onclick="fetchSimilarMovies()">Search</button>
+
+    <h2>Similar Movies:</h2>
+    <ul id="results"></ul>
+
+    {{> footer}} <!-- Include the footer partial -->
+
+    <script src="/script.js"></script>
+</body>
+</html>
