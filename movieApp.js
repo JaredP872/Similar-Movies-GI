@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
@@ -26,7 +27,8 @@ app.get("/", (req, res) => {
 // API route for fetching similar movies
 app.get("/movies/similar", async (req, res) => {
   const axios = require("axios");
-  const API_KEY = "7ad8c409246b2f8dc44279bc443f467d"; // Replace with your TMDB API key
+  const API_KEY = process.env.TMDB_API_KEY; // Replace with your TMDB API key
+  const port = process.env.PORT || 3000;
   const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 
   const { title } = req.query;

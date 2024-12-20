@@ -1,10 +1,11 @@
 {
   "name": "similar-movies-gi",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An app that will generate similar movies depending on the movie that you enter.",
+  "main": "movieApp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node movieApp.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/JaredP872/Similar-Movies-GI#readme",
   "dependencies": {
     "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "handlebars": "^4.7.8",
     "hbs": "^4.2.0"
