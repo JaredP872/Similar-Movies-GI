@@ -2,7 +2,7 @@
 require("dotenv").config();
 // This imports the express library. The express library is used to create a web server
 const express = require("express");
-// This line imports the built in path module. This helps with handling file and direcvtory paths.
+// This line imports the built in path module. This helps with handling file and directory paths.
 const path = require("path");
 const hbs = require("hbs");
 // Creates an express application instance to handle HTTP request and responses
